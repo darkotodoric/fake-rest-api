@@ -33,6 +33,7 @@ The API provides the following endpoints:
 - `POST /user`: Create a new user.
 - `GET /user/{id}`: Get details of a user by their ID.
 - `DELETE /user/{id}`: Delete a user by their ID.
+- `GET /headers`: List of headers
 
 ## Data Structure
 
