@@ -6,18 +6,23 @@ This project provides a simple, fake JSON API using Symfony for testing purposes
 To set up this project, follow these steps:
 
 1. Clone the repository:
-```
+```bash
 git clone https://github.com/darkotodoric/fake-json-api
 ```
 
-2. Install dependencies:
-```
-composer install
+2. Start the Docker
+```bash
+docker-compose up -d
 ```
 
-3. Start the Docker
+3. Install dependencies:
+```bash
+docker exec -it fakejsonapi-php-container php composer.phar install
 ```
-docker-compose up -d
+
+4. Start using API
+```bash
+curl -X GET "http://localhost/users"
 ```
 
 ## Usage
