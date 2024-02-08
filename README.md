@@ -30,9 +30,9 @@ curl -X GET "http://localhost/users"
 The API provides the following endpoints:
 
 - `GET /users`: List all users.
-- `POST /user`: Create a new user.
-- `GET /user/{id}`: Get details of a user by their ID.
-- `DELETE /user/{id}`: Delete a user by their ID.
+- `POST /users`: Create a new user.
+- `GET /users/{id}`: Get details of a user by their ID.
+- `DELETE /users/{id}`: Delete a user by their ID.
 - `GET /headers`: List of headers
 
 ## Data Structure

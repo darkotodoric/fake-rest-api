@@ -17,7 +17,7 @@ class UserController extends AbstractController
         return $this->json($users);
     }
 
-    #[Route('/user', methods: ['POST'])]
+    #[Route('/users', methods: ['POST'])]
     public function create(Request $request): JsonResponse
     {
         return $this->json([
@@ -25,7 +25,7 @@ class UserController extends AbstractController
         ]);
     }
 
-    #[Route('/user/{id}', methods: ['GET'], requirements: ['id' => '\d+'])]
+    #[Route('/users/{id}', methods: ['GET'], requirements: ['id' => '\d+'])]
     public function details(KernelInterface $kernel, int $id): JsonResponse
     {
         $users = json_decode(file_get_contents($kernel->getProjectDir() . '/data/users.json'), true);
@@ -39,7 +39,7 @@ class UserController extends AbstractController
         throw $this->createNotFoundException('User not found');
     }
 
-    #[Route('/user/{id}', methods: ['DELETE'], requirements: ['id' => '\d+'])]
+    #[Route('/users/{id}', methods: ['DELETE'], requirements: ['id' => '\d+'])]
     public function delete(KernelInterface $kernel, int $id): JsonResponse
     {
         $users = json_decode(file_get_contents($kernel->getProjectDir() . '/data/users.json'), true);
