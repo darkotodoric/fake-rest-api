@@ -22,7 +22,7 @@ docker exec -it fakejsonapi-php-container php composer.phar install
 
 4. Start using API
 ```bash
-curl -X GET "http://localhost/users"
+curl -X GET "http://localhost:1337/users"
 ```
 
 ## Usage
