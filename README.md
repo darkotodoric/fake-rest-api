@@ -1,6 +1,6 @@
-## Fake JSON API for testing
+## Fake REST API for testing
 
-This project provides a simple, fake JSON API using Symfony for testing purposes. It's designed to simulate basic user-related operations such as fetching user details, creating a new user, and deleting a user. The data is stored in a JSON file, making it lightweight and easy to manipulate.
+This project provides a simple, fake REST API using Symfony for testing purposes. It's designed to simulate basic user-related operations such as fetching user details, creating a new user, and deleting a user. The data is stored in a JSON file, making it lightweight and easy to manipulate.
 
 ## Installation
 To set up this project, follow these steps:
