@@ -1,16 +1,16 @@
 version: '3.8'
 
 services:
-  fakejsonapi-nginx-service:
-    container_name: fakejsonapi-nginx-container
+  fakerestapi-nginx-service:
+    container_name: fakerestapi-nginx-container
     image: nginx:1.24.0
     ports: [ "1337:80" ]
     volumes:
       - ./:/var/www/project
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
 
-  fakejsonapi-php-service:
-    container_name: fakejsonapi-php-container
+  fakerestapi-php-service:
+    container_name: fakerestapi-php-container
     image: php:8.3-fpm
     build:
       context: .

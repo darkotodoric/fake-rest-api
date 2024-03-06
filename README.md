@@ -7,7 +7,7 @@ To set up this project, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/darkotodoric/fake-json-api
+git clone https://github.com/darkotodoric/fake-rest-api
 ```
 
 2. Start the Docker
@@ -17,7 +17,7 @@ docker-compose up -d
 
 3. Install dependencies:
 ```bash
-docker exec -it fakejsonapi-php-container php composer.phar install
+docker exec -it fakerestapi-php-container php composer.phar install
 ```
 
 4. Start using API
